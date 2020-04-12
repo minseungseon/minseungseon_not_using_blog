@@ -1,9 +1,10 @@
 ---
 layout: page
 title: do-while문
-grand_parent: 코딩공부
 parent:Java공부
+grand_parent: 코딩공부
 nav_order: 1
+
 ---
 
 # do-while문
