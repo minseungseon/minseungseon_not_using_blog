@@ -1,10 +1,12 @@
 ---
 layout: page
 title: do-while문
-parent:Java 공부
+parent: Java 공부
 grand_parent: 코딩공부
-nav_order: 1
+nav_order:1
 ---
+
+
 
 # do-while문
 특징: i의 값이 적어도 한번은 출력이 된다는 것이 특징  
