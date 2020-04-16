@@ -19,7 +19,7 @@ public class AverageCal {
 		for (i=0; i<array.length; i++) {
 			avg += array[i];
 		}
-		return avg/array.length; #이렇게 하면 되지만
+		return avg/array.length; //이렇게 하면 되지만
 	}
 
 	public double average(double [] array) {
@@ -27,7 +27,7 @@ public class AverageCal {
 		int i = 0;
 		for (i=0; i<array.length; i++) {
 			avg += array[i];
-			avg = avg/array.length; #이렇게 하면 return 이 되지 않는다..
+			avg = avg/array.length; //이렇게 하면 return 이 되지 않는다..
 		}
 		return avg;
 	}
