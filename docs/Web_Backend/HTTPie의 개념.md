@@ -63,6 +63,6 @@ $ http --form post "httpbin.org/post" x=1 y="hello"
 --form 이 아닌, --json 으로 하면 json에 값이 들어가진다! 
   
     
-    
+<br>
 * https://httpie.org/ 에서 모든 trial 은 가능하다!  
       
