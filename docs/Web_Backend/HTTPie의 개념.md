@@ -2,7 +2,14 @@ Command Line으로 작동하는 Http Client
 
 ## Httpie 설치  
 ```python 
-pip install --upgrade httpie
+pip install --upgrade httpie  
+
+#맥 터미널에서는..
+brew install httpie 
+
+#홈페이지를 보니 거의 모든 tool로 install 이 가능하다!
+#https://httpie.org/doc#installation
+
 ``` 
 
 ## Httpie 명령어  
@@ -22,3 +29,12 @@ http 키워드로 시작함!!!
   
   * Get인자가 있으면 쓰고, 없으면 안써도됨!  
   * Put인자도 마찬가지.  
+  
+  
+~~잘 이해가 되지 않으니 직접 해보도록 하자~~ 
+  
+## 직접 해보기  
+맥이라면, `$ brew install httpie` 를 하여 설치를 하면 된다!  
+설치후에 `$ http` 를 터미널에 치면, 아래와 같이 나온다.  
+
+[터미널]<img src=./http>
