@@ -37,4 +37,4 @@ http 키워드로 시작함!!!
 맥이라면, `$ brew install httpie` 를 하여 설치를 하면 된다!  
 설치후에 `$ http` 를 터미널에 치면, 아래와 같이 나온다.  
 
-[터미널]<img src=./http>
+[터미널]<img src=./http.png>
