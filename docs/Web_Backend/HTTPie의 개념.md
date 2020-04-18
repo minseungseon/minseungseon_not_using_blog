@@ -3,10 +3,10 @@
 
 ## Httpie 설치  
 ```python 
-pip install --upgrade httpie  
+$ pip install --upgrade httpie  
 
 #맥 터미널에서는..
-brew install httpie 
+$ brew install httpie 
 
 #홈페이지를 보니 거의 모든 tool로 install 이 가능하다!
 #https://httpie.org/doc#installation
@@ -47,5 +47,7 @@ http 키워드로 시작함!!!
   
   
 * **port 번호로 http 명령어를 사용하고 싶으면**  
-```$ http :8000```  
+```
+$ http :8000
+```  
 이런식으로 터미널에 작성하여햐 한다.  
