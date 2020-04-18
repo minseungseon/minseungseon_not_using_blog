@@ -44,14 +44,16 @@ http 키워드로 시작함!!!
 를 치게 되면 그 페이지에 대한 다양한 정보를 얻을 수 있다.  
 ~~정말 신기방기~~  
 <img src=./http02.png>  
-  
+  <br>
   
 * **port 번호로 http 명령어를 사용하고 싶으면**  
 ```
 $ http :8000
 ```  
 이런식으로 터미널에 작성하여야 한다.  
-
+  
+  <br>  
+  
 * http 실험 웹에서 post 요청 해보기  
 ```
 $ http --form post "httpbin.org/post" x=1 y="hello"
