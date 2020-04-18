@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: do-while문
 parent: Java 공부
 grand_parent: 코딩공부
