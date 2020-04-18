@@ -50,4 +50,19 @@ http 키워드로 시작함!!!
 ```
 $ http :8000
 ```  
-이런식으로 터미널에 작성하여햐 한다.  
+이런식으로 터미널에 작성하여야 한다.  
+
+* http 실험 웹에서 post 요청 해보기  
+```
+$ http --form post "httpbin.org/post" x=1 y="hello"
+```
+이런식으로 form 에 x,y값을 post로 요청하면,  
+<img src="./http03.png">  
+이렇게 확인할 수 있다. 
+
+--form 이 아닌, --json 으로 하면 json에 값이 들어가진다! 
+  
+    
+    
+* https://httpie.org/ 에서 모든 trial 은 가능하다!  
+      
