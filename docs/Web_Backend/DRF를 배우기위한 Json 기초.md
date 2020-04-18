@@ -1,8 +1,9 @@
 ---
 layout: page
-title: DRF를 배우기위한 Json 기초
+title: Json 기초
 parent: 웹백앤드 
 nav_order: 2
+has_children:true
 ---
 
 ## Json 
