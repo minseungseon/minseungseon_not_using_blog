@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: 웹백앤드
 nav_order: 3
 has_children: true
