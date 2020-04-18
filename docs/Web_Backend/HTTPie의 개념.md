@@ -1,4 +1,5 @@
-Command Line으로 작동하는 Http Client  
+## Httpie란,  
+**Command Line**으로 작동하는 **Http Client**  
 
 ## Httpie 설치  
 ```python 
@@ -45,6 +46,6 @@ http 키워드로 시작함!!!
 <img src=./http02.png>  
   
   
-* **port 번호로 http 명령어를 사용하고 싶으면  **  
+* **port 번호로 http 명령어를 사용하고 싶으면**  
 ```$ http :8000```  
 이런식으로 터미널에 작성하여햐 한다.  
