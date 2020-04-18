@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DRF를 배우기위한 Json 기초
-parent: Web_Backend
+parent: 
 nav_order: 1
 ---
 
