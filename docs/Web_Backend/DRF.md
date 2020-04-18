@@ -42,6 +42,9 @@ www.json.org
 ```python  
 impot json  #매우간단...
 ```
+이 때 파이썬 파일 이름을 `json.py` 로 설정하면 **안된다..**  
+이렇게 하면 json module 을 읽어오지 못하더라구요..
+
 
 #### 직렬화, 역직렬화 표현하기 
 ```python 
