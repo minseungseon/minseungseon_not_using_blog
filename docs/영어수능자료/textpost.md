@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: 영어수능자료
 nav_order: 2
+
 ---
 
 Hi
