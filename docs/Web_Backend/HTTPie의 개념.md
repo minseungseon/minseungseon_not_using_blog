@@ -1,3 +1,12 @@
+---
+layout: default
+title: HTTPie의 개념
+parent: Backend Basics
+nav_order: 3
+has_children: true
+
+---
+
 ## Httpie란,  
 **Command Line**으로 작동하는 **Http Client**  
 
