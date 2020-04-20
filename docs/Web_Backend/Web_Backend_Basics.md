@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 백엔드 기초
+title: Backend Basics
 parent: Web Backend
 nav_order: 1
 has_children: true
