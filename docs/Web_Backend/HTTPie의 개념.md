@@ -2,8 +2,8 @@
 layout: default
 title: HTTPie의 개념
 parent: Backend Basics
+grand_parent: Web Backend
 nav_order: 3
-has_children: true
 
 ---
 
