@@ -1,3 +1,11 @@
+---
+layout: default
+title: DRF에서의 Http Method
+parent: 웹백앤드 기초
+nav_order: 2
+has_children: true
+---
+
 ## DRF에서의 Http Method  
 ~~다 하나하나 외우기까지 할 필요는 없다고 한다..~~  
 
