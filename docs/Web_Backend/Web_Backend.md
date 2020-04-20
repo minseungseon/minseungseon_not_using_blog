@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 웹백앤
+title: 웹백앤드
 nav_order: 3
 has_children: true
 ---
