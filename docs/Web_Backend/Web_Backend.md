@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 웹백앤드
+title: 웹백앤드 기초
 nav_order: 3
 has_children: true
 ---
