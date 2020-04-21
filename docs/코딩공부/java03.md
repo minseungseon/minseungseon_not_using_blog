@@ -6,7 +6,7 @@ nav_order: 3
 has_children: true
 
 ---
-** 인터페이스의 구성 요소  
+## 인터페이스의 구성 요소  
 * **상수**  
 public만 허용하고, public static final 은 생략한다!  
 
@@ -24,7 +24,7 @@ public abstract 생략 가능
 * **static 메소드**  
 public, private 모두 지정 가능 -> 생략하면 public  
 
-** 인터페이스를 구현하자!  
+## 인터페이스를 구현하자!  
 
 1. 선언  
 ``` java
