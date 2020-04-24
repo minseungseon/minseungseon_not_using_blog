@@ -29,4 +29,50 @@ https://docs.oracle.com/javase/10/docs/api/overview-summary.html
 -object 클래스의 주요 메소드  
 <img src = "./objectclass.png">
 
+## Wrapper 클래스  
+-클래스 이름이 wrapper가 아님!  
+-byte, short, int, long, char, float, double, boolean 을 앞글자 대문자로 하여 가지는 것을 Wrapper 클래스 라고 함!  
+# Wrapper 클래스 객체 생성  
+-기본 타임의 값으로 객체 생성  
+```java
+integer i = Integer.valueOf(10);
+Character c = Character.valueOf('c');
+Boolean b = Boolean.valueOf(true);
+```
+-문자열로 Wrapper 객체 생성  
+```java
+integer i = Integer.valueOf("10");
+Double d = Double.valueOf("3.14");
+Boolean b = Boolean.valueOf("false");
+```
+-Float 객체는 double 타입의 값으로부터 생성 가능  
+```java
+Float f = Float.valueOf((float) 3.14);
+```
 
+## String 객체  
+-스트링 생성 방법 (리터럴로 생성)  
+```java 
+String a = "hello";
+String b = "Java";
+String c = "hello"; //a 와 c는 동일한 문자열을 참조함  
+String d = new String("hello");
+String e = new String("hello"); //d 와 e는 별로 메모리로 만들어짐  
+```
+-스트링 객체는 **수정 불가능**  
+한 번 만들어지면, ~.concat 을 통해 두 문자열을 합치더라도 두개의 다른 메모리로 만들어진다.  
+
+## 문자열 비교  
+`int compareTo(String anotherString)`
+
+## 공백제거  
+`String trim()`  
+
+## StringBuffer 클래스  
+-가변크기의 문자열 저장 클래스  
+-String 클래스와 달리 문자열 변경 가능  
+-StringBuffer 객체의 크기는 스트링 길이에 따라 가변적  
+
+## Calendar 객체  
+-Calendar 객체 생성  
+`Calendar now = Calendar.getInstance(); `  
