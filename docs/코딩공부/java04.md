@@ -27,6 +27,6 @@ https://docs.oracle.com/javase/10/docs/api/overview-summary.html
 -모든 객체가 공통으로 가지는 객체의 속성을 나타내는 메소드를 보유한다.  
 
 -object 클래스의 주요 메소드  
-(./objectclass.png)  
+<img src = "./objectclass.png">
 
 
