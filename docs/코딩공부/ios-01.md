@@ -13,9 +13,6 @@ nav_order: 1
 오늘 들은 강의 리스트는 다음과 같다.  
 
 ## list of lessons for today  
-1. Variables and Types  
-    -udacity 에서는 'sandbox'라는 용어로 코드 실습 시간을 지칭한다.  
-2. 코드 실습  
 
 | **index** | **topic** |  
 | :----------: | :-----------------------: |
@@ -24,7 +21,11 @@ nav_order: 1
 | 3 | [text 외에 숫자도 variable 은 담을 수 있다!](#text-외에-숫자도-variable-은-담을-수-있다!)|
 | 4 | [swift 안에 있는 data type](#swift-안에-있는-data-type)|
 | 5 | [변수의 데이터 타입 정확하게 지정해주기](#변수의-데이터-타입-정확하게-지정해주기) |  
-
+| 6 | [상수 (constant)](#상수-(constant)) |
+| 7 | [변수 이름짓기](#변수-이름짓기 )|
+| 8 | [literal 이란?](#literal-이란?)|
+| 9 | [Escape Characters](#Escape-Characters) |  
+| 10 | [String Interpolation 문자열 삽입](#String-Interpolation-문자열-삽입)|
 
 ## variable 작성 연습  
 
@@ -100,7 +101,7 @@ double, bool, string에 대해서는 그 변수의 데이터 타입은 따로 �
 variable(변수)는 다시 그 값이 할당 될 수 있으나, constant(상수)는 값이 변할 수 없다.  
 변수는 `var` 로, 상수는 `let`으로 선언한다.  
 
-## 변수 이름 짓기  
+## 변수 이름짓기  
 **정말 신기하게도!!!** swift 에서는 이모티콘을 변수이름으로 쓸 수 있게 한다. (물론 드물다고 한다 ㅎ)  
 안되는 경우의 수는 다음과 같다.  
         1. 숫자로 시작하는 이름  
@@ -109,7 +110,7 @@ variable(변수)는 다시 그 값이 할당 될 수 있으나, constant(상수)
 swift에서는 **lowerCamelCase** 로 변수 이름을 짓도록 규정하고 있다는 것을 기억하자!  
 
 
-## 'literal' 이란?  
+## literal 이란?  
 swift 에서는 리터럴을 'a literal is the source code representation of a value of a type, such as a number or string' 이라고 정의한다.  
 즉, **숫자, 문자열 과 같은 하나의 타입의 값**을 literal 이라고 정의하게 된다.  
 변수 자체는 literal 이 될 수도 있고, 아닐 수도 있는 것이다.  
