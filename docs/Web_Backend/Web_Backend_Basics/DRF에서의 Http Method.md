@@ -2,7 +2,7 @@
 layout: default
 title: DRF에서의 Http Method
 parent: Backend Basics
-nav_order: 2
+nav_order: 5
 has_children: true
 
 ---
