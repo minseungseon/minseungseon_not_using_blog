@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Java 공부
+title: java
 parent: 코딩공부
-nav_order: 2
+nav_order: 1
 has_children: true
 ---
 
