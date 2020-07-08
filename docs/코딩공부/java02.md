@@ -1,9 +1,9 @@
 ---
 layout: default
 title: 예제풀이
-parent: Java 공부
+parent: java
+grand_parent: 코딩공부
 nav_order: 2
-has_children: true
 
 ---
 
