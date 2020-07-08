@@ -16,6 +16,14 @@ nav_order: 1
 1. Variables and Types  
     -udacity 에서는 'sandbox'라는 용어로 코드 실습 시간을 지칭한다.  
 2. 코드 실습  
+| **index** | **topic** |  
+| :----------: | :-------------: |
+| 1 | [variable 작성 연습](#variable-작성-연습) |
+| 2 | [주석 달기 ](#주석-달기 ) |
+| 3 | [text 외에 숫자도 variable 은 담을 수 있다!](#text-외에-숫자도-variable-은-담을-수-있다!)|
+| 4 | [swift 안에 있는 data type](#swift-안에-있는-data-type)|
+| 5 | [변수의 데이터 타입 정확하게 지정해주기](#변수의-데이터-타입-정확하게-지정해주기) |  
+
 
 ## variable 작성 연습  
 
@@ -113,7 +121,7 @@ var getting = welcome
 ```
 위의 코드에서, 5와 hello 는 literal 이지만, welcome 은 literal 이 아니다.  
 
-## Escpate Characters  
+## Escape Characters  
 String 의 값을 넣을 때에, **띄어쓰기, 탭, "", '', 또는 backslash**의 경우에는 `escape character`를 통해 표현해줘야한다.  
 
 | **character** | **usage** |  
