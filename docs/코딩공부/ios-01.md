@@ -1,6 +1,6 @@
 ---
 layout: default
-title: udacity 1일차
+title: variables and functions
 parent: iOS
 grand_parent: 코딩공부
 nav_order: 1
