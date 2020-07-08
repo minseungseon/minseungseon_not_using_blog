@@ -97,7 +97,7 @@ variable(변수)는 다시 그 값이 할당 될 수 있으나, constant(상수)
         1. 숫자로 시작하는 이름  
         2. 특별문자로 시작하는 경우  
 
-swift에서는 **'lowerCamelCase'**로 변수 이름을 짓도록 규정하고 있다는 것을 기억하자!  
+swift에서는 **lowerCamelCase** 로 변수 이름을 짓도록 규정하고 있다는 것을 기억하자!  
 
 
 ## 'literal' 이란?  
@@ -122,7 +122,7 @@ String 의 값을 넣을 때에, **띄어쓰기, 탭, "", '', 또는 backslash**
 |\t| horizontal tab 탭을 의미함 |
 |\"| 쌍따옴표 double quotation mark|
 |\'|single quotation mark|
-|\| backslash|  
+| \ | backslash |  
 
 ## String Interpolation 문자열 삽입  
 ```swift
@@ -136,5 +136,5 @@ var insertHere = "My name is, \(insertThis)"
 
 print(insertHere)
 ```
-출력: My name is, Minseung
+출력: `My name is, Minseung`
 
