@@ -1,9 +1,10 @@
+
 ---
 layout: default
-title: DRF에서의 Http Method
+title: Http Method
 parent: Backend Basics
-nav_order: 5
-has_children: true
+grand_parent: Web Backend
+nav_order: 3
 
 ---
 
