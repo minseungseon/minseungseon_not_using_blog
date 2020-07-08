@@ -7,7 +7,8 @@ nav_order: 1
 
 ---
 
-# 첫 iOS udacity!  
+
+## 첫 iOS udacity!  
 드디어! 첫번째 iOS 강의를 듣게 되었다.  
 오늘 들은 강의 리스트는 다음과 같다.  
 
