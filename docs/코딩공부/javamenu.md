@@ -7,8 +7,7 @@ has_children: true
 ---
 
 
-java 공부
-형번환은 무조건 해주어야한다.  
+java study progress 
 
 
 
