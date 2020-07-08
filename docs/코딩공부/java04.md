@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 모듈 
-parent: Java 공부
+title: 모듈 사용
+parent: java
+grand_parent: 코딩공부
 nav_order: 4
-has_children: true
 
 ---
 
