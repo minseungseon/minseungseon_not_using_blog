@@ -1,9 +1,9 @@
 ---
 layout: default
 title: do-while문
-parent: Java 공부
+parent: java
 nav_order: 1
-has_children: true
+
 
 ---
 
