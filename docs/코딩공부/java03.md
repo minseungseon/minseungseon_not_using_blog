@@ -1,11 +1,12 @@
 ---
 layout: default
 title: 인터페이스
-parent: Java 공부
+parent: java
+grand_parent: 코딩공부
 nav_order: 3
-has_children: true
 
 ---
+
 ## 인터페이스의 구성 요소  
 * **상수**  
 public만 허용하고, public static final 은 생략한다!  
