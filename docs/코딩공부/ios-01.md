@@ -13,12 +13,25 @@ nav_order: 1
 오늘 들은 강의 리스트는 다음과 같다.  
 
 ## list of lessons for today  
-1. objective-C and Swift, Compare and Contrast  
-2. Writing Classes (Syntax 연습)  
-3. adding functionality to a class: Methods and messages (메소드 쓰는 연습법)  
-4. port an app from objective-C to swift  
-    -persist data with NSCoder and NSKeyedArchiver. Implement navigation with a collection view.  
-5. common interperability challenges 
-    -facilitate communication between the languages of iOS. Complete a set of coding challenges to sharpen interop skills.  
+1. Variables and Types  
+    -udacity 에서는 'sandbox'라는 용어로 코드 실습 시간을 지칭한다.  
+2. 코드 실습  
 
-objective-c는 오랜시간 계속 필요할 것이고,  
+## variable 작성 연습  
+
+```swift
+var question = "Ready to write your first lines of Swift code?"
+print(question)
+var response = "Yes, I am ready!"
+print(response)
+```
+
+위의 두 문장이 출력되게 된다!  
+
+예를 들어, Hello, world! 를 출력하기 위해서는 다음과 같이 작성한다.  
+```swift
+var welcome = "Hello, world"
+print(welcome)
+```
+
+
