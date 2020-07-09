@@ -141,7 +141,8 @@ for char in word {
 
 ## while loop 예시  
 
-<div class="code-example" markdown="1">
+<div class="code-example" markdown="1">  
+
 >> 첫번째 문제  
 >> 0...1000까지의 범위에서 짝수만을 출력하는 swift 문을 작성하라!  
 
@@ -152,8 +153,11 @@ while(!(div*2==1002)){ //1002가 되기 전까지 while 문을 돌린다.
     div += 1     //곱한 이후에는 div 를 1 씩 증가시킨다.  
 }
 ```
+
 </div>
 
+<div class="code-example" markdown="1">  
+  
 >> 두번째 문제
 >> 두 코인 모두 뒷면이 나올 때까지 두 코인이 뒷면, 혹은 앞면이 나오는지를 프린트 해라.  
 
@@ -175,6 +179,7 @@ break;
 출력:
 <img src= "./ios-03.png">
 
+</div>
 
 
 
