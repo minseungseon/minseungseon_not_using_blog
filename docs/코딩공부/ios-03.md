@@ -170,7 +170,7 @@ break;
 ```
 
 출력:
-(./ios-03.png)  
+[whileex](./ios-03.png)  
 
 
 
