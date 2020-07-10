@@ -114,3 +114,34 @@ print(endOfYearBonus(basePay: 10.0, bonus: 10.0, percentBonus: 0)) //위의 deaf
   
   
 ## 전역 매개변수, 지역 매개변수 (Internal and External Parameter Names)  
+### 01 internal parameter name  
+
+```swift
+func addVaolues(value1 x: Int, value2 y: Int) { //이렇게 작성하면 이 function 내에서 x 와 y를 지역변수로 사용하게된다.
+    return x+y 
+}
+```
+  
+### 02 external parameter name  
+전역 매개변수는 기존에 사용하던 대로 하는 방식을 의미하는데,  
+사실 매번 전역 매개변수를 full name 으로 호출하여 parameter 이름을 넣어주기가 귀찮다.  
+무슨 말이냐면...  
+
+```swift 
+func loveIt(subject: String) { 
+    
+    print("I love \(subject)")
+}
+loveIt(subject: "앞에 매개변수이름인 subject를 매번 써주는 것이 귀찮다는 것이다..!")
+```
+위 코드에서 언급했듯이, function을 호출하면서 전역 매개변수를 매번 써주고 그 뒤에 입력할 데이터를 넣는 것이란 굉장히 귀찮은 일이다...  
+그래서 아래와 같이 매개변수를 넣어주면 호출할 때에 매개변수 이름을 넣어줄 필요가 없게된다!  
+
+
+```swift
+func loveIt(_ subject: String) { 
+    print("I love \(subject)")
+}
+loveIt("앞에 매개변수이름인 subject를 안써줘도 된당") //매개변수 이름을 안써줘도 된다!
+```  
+
