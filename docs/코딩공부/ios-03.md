@@ -221,6 +221,7 @@ java, c언어에서의 `do-while`문 과 같다!
   
 예시:
 <div class="code-example" markdown="1">  
+
 ```swift 
 var i = 1
 repeat {
