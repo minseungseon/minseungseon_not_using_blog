@@ -63,7 +63,7 @@ loveIt(subject: subjectEx) //Swift를 문자열 값으로 가지고 있는 변�
 
 출력:  
 
-<imt src = "./ios-03-03.png">  
+<img src = "./ios-03-03.png">  
 
 
 ### 매개변수가 여러 개인 경우  
