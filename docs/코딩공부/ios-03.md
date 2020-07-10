@@ -231,7 +231,7 @@ repeat {
 ```
 
 출력:  
-<img src ="./ios-03-01">
+<img src ="./ios-03-01.png">
 
 </div>
 
