@@ -168,8 +168,29 @@ while(!(div*2==1002)){ //1002가 되기 전까지 while 문을 돌린다.
 </div>
   
 <div class="code-example" markdown="1">  
+
+### 두번째 문제  
+### 0...500까지의 범위(inclusive, 즉 500을 포함하는 범위)에서 짝수만을 출력하는 swift 문을 작성하라!  
+
+```swift 
+var number = 0
+
+while true {
+    number += 2
+    print(number)
+    if(number == 500){
+        break
+    }
+    
+}
+
+```
+
+</div>
   
-### 두번째 문제
+<div class="code-example" markdown="1">  
+  
+### 세번째 문제
 ### 두 코인 모두 뒷면이 나올 때까지 두 코인이 뒷면, 혹은 앞면이 나오는지를 프린트 해라.  
 
 ```swift 
@@ -191,6 +212,29 @@ break;
 <img src= "./ios-03.png">
 
 </div>
+  
+  
+## reapeat-while 문  
+java, c언어에서의 `do-while`문 과 같다!  
+  
+<div class="code-example" markdown="1">  
+  
+예시:
+<div class="code-example" markdown="1">  
+```swift 
+var i = 1
+repeat {
+    print("\(i)번째 줄입니다!")
+    i += 1
+} while i<10
+```
+
+출력:  
+<img src ="./ios-03-01">
+
+</div>
+
+
 
 
 
