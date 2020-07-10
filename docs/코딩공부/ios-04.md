@@ -61,8 +61,10 @@ var subjectEx = "Swift" //function 의 parameter(매개변수)로 들어갈 subj
 loveIt(subject: subjectEx) //Swift를 문자열 값으로 가지고 있는 변수를 매개변수로 loveIt function 에 넣어주고 호출함 
 ```
 
-출력: 
-<imt src = "./ios-03-03.png">
+출력:  
+
+<imt src = "./ios-03-03.png">  
+
 
 ### 매개변수가 여러 개인 경우  
 
