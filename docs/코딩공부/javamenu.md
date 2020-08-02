@@ -7,7 +7,7 @@ has_children: true
 ---
 
 
-java study progress 
+### :pencil2: java 공부 기록장입니다.  
 
 
 

@@ -6,5 +6,5 @@ nav_order: 2
 has_children: true
 ---
 
-iOS study progress 
+### :pencil2: iOS 공부 기록장입니다.  
 

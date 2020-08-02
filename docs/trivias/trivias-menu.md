@@ -5,4 +5,4 @@ nav_order: 6
 has_children: true
 ---
 
-일기장!
+### :pencil2: 일상 기록장입니다.  

@@ -5,5 +5,5 @@ nav_order: 4
 has_children: true
 ---
 
-멋사에서 시작한 프로젝트를 하면서 기록할 예정이다.. 
+### :pencil2: 웹 서버단 공부 기록장입니다.  
 
