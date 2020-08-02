@@ -6,4 +6,4 @@ has_children: true
 ---
 
 
-java study progress 
+### :pencil2: 알고리즘 공부 기록장입니다.  

@@ -7,10 +7,11 @@ permalink: /
 
 ---
 
-<<<<<<< HEAD
- <h1 align="center">Hello, I am MinseungSeon </h1> 
+ <h2 align="center"> :raised_hands: Hi, it's a nice day to dig in more codes! :raised_hands: </h2> 
+      
+____________
 
-<p align="center"><img src="./my-face.JPG"></p>
+<p align="center"><img src="./my-face.JPG" width="350" height="350"></p>
 
 ## :seedling: iOS developer  
 글로벌 iOS 개발자를 꿈꾸고 있는 선민승입니다 :D  
