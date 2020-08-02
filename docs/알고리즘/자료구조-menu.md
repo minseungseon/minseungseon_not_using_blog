@@ -6,4 +6,4 @@ nav_order: 1
 has_children: true
 ---
 
-자료구조 공부 내용 기록  
+### :pencil2: 자료구조 공부 기록장입니다.  

@@ -7,6 +7,7 @@ permalink: /
 
 ---
 
+<<<<<<< HEAD
  <h1 align="center">Hello, I am MinseungSeon </h1> 
 
 <p align="center"><img src="./my-face.JPG"></p>

@@ -5,4 +5,4 @@ nav_order: 7
 has_children: true
 ---
 
-공모전 준비 기록장!!
+### :pencil2: 공모전 준비 기록장입니다 
