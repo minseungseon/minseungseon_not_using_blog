@@ -7,4 +7,6 @@ permalink: /
 
 ---
 
-hi this is home
+<div style="text-align:center"> <h1>Hello, I am MinseungSeon </h1> </div>
+  
+
