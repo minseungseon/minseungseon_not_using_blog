@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 알고리즘
-nav_order: 6
+nav_order: 5
 has_children: true
 ---
 
