@@ -1,3 +1,12 @@
+---
+layout: default
+title: 기타등등
+parent: iOS
+nav_order: 2
+has_children: true
+---
+
+
 트러블 슈팅
 
 ## 1. 다크모드 예외처리 문제
@@ -17,6 +26,14 @@ text field에서 Place holder와 textfield를 '분리'시켜야한다.
 해결 후:  
 ![IMG_1743](https://user-images.githubusercontent.com/37579661/90279326-fb936d80-dea3-11ea-92b2-17199edfec9f.PNG)
 ![IMG_1744](https://user-images.githubusercontent.com/37579661/90279327-fcc49a80-dea3-11ea-9111-f3a9062effe8.PNG)
+
+
+또는..  
+
+그냥 
+.background(Color(.systemBackground))
+를 추가할 수도 있는 문제였다 ㅠㅠ  
+
 
 ## better iOS developer가 되는 방법 
 ## 1. 주석활용: //MARK 
@@ -179,4 +196,34 @@ We did not give the Image Picker any information, although we could have modifie
 ## prepare for segue
 
 ![image](https://user-images.githubusercontent.com/37579661/90374038-d1ad9700-e0ad-11ea-97db-010e8959193d.png)
+
+
+## delegate  
+- an object that executes a group of methods on behalf of another object
+- view reuse, cutomize를 도와준다!  
+
+- 질문과 관련을 지으면 쉽게 이해할 수 있다. delegate한테 view는 질문을 던진다!  
+ex. 이 새로운 characters로 내가 뭘 해야하니? return button이 눌러지면 내가 어떻게 반응해야하니?  
+- view의 delegate은 보통 control object가 된다.  그리고 그 control object가 위의 질문들에 대답한다. 그리고 그 과정에서 protocol에 기록을 한다. 그 protocol을 만족하면 delegate이 된다!  
+
+-If the only difference between the three text fields is their delegates, can we swap the delegates and see the behaviors swap?
+--> 가능하다. custom behavior는 delegate에 의해 제공되어진다!  
+
+예를 들어, 
+RandomColorTextFieldDelegate.swift 를 구성할 때, 처음으로 넣은 것은
+![image](https://user-images.githubusercontent.com/37579661/90543752-1aa24000-e1c1-11ea-9b40-db766eb005b5.png)
+이것인데,  
+
+NSObject는 ![image](https://user-images.githubusercontent.com/37579661/90543871-386fa500-e1c1-11ea-833e-806fa0890cc3.png)
+Objective-C class 상속에서의 루트 클래스인것으로 다큐멘트에서 소개되어진다.  
+아마 가장 루트를 건들기 위해서 이렇게 Delegate 을 사용하면서 같이 implement 하는 것으로 보인다.  
+
+
+![image](https://user-images.githubusercontent.com/37579661/90544768-93ee6280-e1c2-11ea-9e7a-4952ea2ea509.png)
+
+![image](https://user-images.githubusercontent.com/37579661/90544794-9e106100-e1c2-11ea-84f6-6afbc103f606.png)
+
+
+
+
 
