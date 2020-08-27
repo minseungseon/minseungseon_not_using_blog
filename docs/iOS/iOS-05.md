@@ -46,3 +46,13 @@ extension View {
     }
 }
 ```
+
+
+## AVAudio  
+Summary
+
+` static var duckOthers: AVAudioSession.CategoryOptions { get } `
+: An option that reduces the volume of other audio session while audio from this session plays.
+
+
+

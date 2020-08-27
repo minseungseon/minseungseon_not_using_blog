@@ -113,17 +113,48 @@ KeyboardObserving.swift
 
     - 처음으로 이 메인 body가 나타날 때에, 마이크를 사용하는 것에 대한 permission을 받는데, 이 또한 observedobject인 closedcap의 .getPermission() 메소드를 통해 이루어진다. `.onAppear {self.closedCap.getPermission()}`  
 
-2. ContentView.swift  
-: 엘리와의 채팅 창을 보여주는 view. `ChatView.swift` 를 그대로 상속받아 보여주는 view 파일이다.  
-    - struct **ContentView**: View  
-      - 
-       
-  ```swift 
-    let type: Type
-    let messages: Message
-     var chatView: ChatView
+2. ContentView.swift   
+: 엘리와의 채팅 창을 보여주는 view. `ChatView.swift` 를 그대로 상속받아 보여주는 view 파일이다.   
+  - struct **ContentView**: View  
+  - type, message그리고 ChatView.swift의 `ChatView` struct를 가져오기 위해 선언한다.
+      ```swift
+      let type: Type
+      let messages: Message
+      var chatView: ChatView
+      ```
+  - 선언 후에 init을 해준다. 그 이유는 ChatView를 상속받으면서 현재 struct의 타입과 메시지 파라미터를 넘겨준다.   
+      ```swift
+       init(_ typeObj: Type) { 
+        self.type = typeObj
+        self.messages = Message() 
+        chatView = ChatView(self.type, messages: self.messages)
+        }
        ```
-       chatView를 ContentView에서 
+        //왜 type만 init 괄호 안..?
+        //typeObj? Message()? 선언의 표기차이 이유는? typeObj는 value 값이고 messages는 클래스여서 그런가..?
+  - 메인 `body`에서는 `GeometryReader`를 통해 `self.chatView`를 띄운다!  
+      ```swift
+      var body: some View {
+        return
+            GeometryReader { geometry in
+                    ZStack(alignment: .leading) {
+                        self.chatView
+                            .padding(.bottom, 20)
+                            .padding(.top, 20)
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                    }
+        }
+    } //근데 왜 Geometry Reader?? 
+      ```
+  
+- 그 외 종속성 
+    1. `@ObservedObject var closedCap: ClosedCaptioning`은 `class ClosedCaptioning: ObservableObject`에서 이렇게 import 되어지는 `ObservableObject`와 소통한다!  
+    2. `ClosedCaptioning.swift`은 `ChatController.swift`와 소통한다. 
+
+
+
+
+       
 
 
 
