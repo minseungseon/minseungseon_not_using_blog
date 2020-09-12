@@ -12,9 +12,9 @@ has_children: true
  </p>
 
 ## Framework 
-| **서버** | **프런트** |
-| :-----: | : -----: |  
-| DjangoRestFramework | React-Native |  
+|         **server**        |   **front end**  |
+|:---------------------:|:------------:|
+| Django Rest Framework | React-Native |
 
 in charge of both server and front end.   
 

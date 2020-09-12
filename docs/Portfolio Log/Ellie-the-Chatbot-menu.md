@@ -14,9 +14,9 @@ has_children: true
 <br/>
 
 ## Framework  
-| **서버** | **프런트** |
-| :-----: | : -----: |  
-| Node.js | iOS |  
+|         **server**        |   **front end**  |
+|:---------------------:|:------------:|
+| Node.js | iOS | 
 
 was in charge of iOS.  
 
