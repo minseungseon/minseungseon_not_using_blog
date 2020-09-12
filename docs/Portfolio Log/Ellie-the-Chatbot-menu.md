@@ -7,14 +7,29 @@ has_children: true
 ---
 
 <h2 align="center">Ellie the Chatbot</h2>
-
+<br/>
 <p align="center"> <img src ="https://user-images.githubusercontent.com/37579661/89458116-77553200-d7a1-11ea-8ced-905038871d70.gif">
  </p>
  
- 
+<br/>
 
- ## Design Pattern  
- : Ellie the Chatbot uses **MVC pattern**.   
+## Framework  
+| **서버** | **프런트** |
+| :-----: | : -----: |  
+| Node.js | iOS |  
+
+was in charge of iOS.  
+
+
+<br/>
+
+## Progress  
+pre-launched through TestFlight, preparing to be launched in AppStore. 
+<br/>
+
+
+## Design Pattern   
+: Ellie the Chatbot uses **MVC pattern**.   
   
 ## Details  
  1. Model:  
