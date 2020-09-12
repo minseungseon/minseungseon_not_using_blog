@@ -24,7 +24,7 @@ has_children: true
 | **view 이름** | 역할 | 내용 |  
 |:------------:|:---:|:---:|  
 |ChatView.swift|     | struct - ChatMessage(Hashable, Identifiable)
-ContentView.swift  
+ContentView.swift  |
   
 MainView.swift  
 MissionChallengeMenu.swift  
