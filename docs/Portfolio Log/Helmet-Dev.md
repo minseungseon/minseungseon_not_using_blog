@@ -8,7 +8,7 @@ has_children: true
 
 <h2 align="center">의료용 뇌파 체크 어플리케이션</h2>
 <br/>
-<p align="center"> <img src ="https://user-images.githubusercontent.com/37579661/91409009-bf86e200-e87f-11ea-9be5-75635b4f7b2a.png">
+<p align="center"> <img src ="https://user-images.githubusercontent.com/37579661/97110315-e0eb3980-171b-11eb-84c5-581c8392ba0c.png">
  </p>
 
 ## Framework 
