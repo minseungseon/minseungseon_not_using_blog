@@ -475,12 +475,311 @@ void X::f(const T* const argp)
         ...
         f();
     }
-    
+
     ...
 
-    f() {
+    void f() {
         ...
     }
     ````
-    이러한 코드가 있다면, 
+    이러한 코드가 있다면, 우리는 main 에서의 f()가 아래의 f() 코드임을 안다. 이게 바로 binding!  
 
+
+
+
+## virtual function   
+virtual function은 상속받는 'child class'안에서 정의되어지게 된다! 그리고 그 child class 는 부모와 같은 signature(argument type) 를 가진 것이어야 한다.  
+
+1. without virtual  
+virtual 이 없는 경우에는, 포인터의 클래스 타입에 의존하여 멤버를 호출한다.  
+
+2. with virtual  
+virtual 로 하는 경우에는, 실제 객체에 의존하게 된다.  
+
+```c++
+#include <iostream>
+
+//parent class Animal! 
+class Animal {
+    public:
+    virtual void eat() //eat() 이라는 function이 child class 에서 다시 정의될 것이라는 것을 알려줌. 
+    {
+        std::cout << "I eat like a generic Animal.\n";
+    }
+};
+
+//inheritance -> public Animal 이렇게 써준다. 
+class Wolf : public Animal {
+    public:
+    void eat() { std::cout << "I eat like a wolf!\n"; }
+};
+
+class Fish : public Animal {
+    public:
+    void eat() { std::cout << "I eat like a fish!\n"; }
+};
+
+class OtherAnimal : public Animal {
+};
+
+int main()
+{
+    Animal *anAnimal[4];
+    //각각은 Animal 포인터 타입으로 배열에 4개가 존재한다.
+
+
+    // dynamic binding
+    // 아래는 모두 Animal 포인터 타입이기 때문에, 보통 Animal 객체를 가르키게 되어있다. 하지만 actual obejct는 여기에서 child type 이다! 
+    anAnimal[0] = new Animal();
+    anAnimal[1] = new Wolf();
+    anAnimal[2] = new Fish();
+    anAnimal[3] = new OtherAnimal();
+
+    for(int i = 0; i < 4; i++) anAnimal[i]->eat();
+    //virtual은 이 function이 child class 에서 다시 정의될 것임을 알려주는 것이다.  
+    //이렇게 eat이 불리더라도 actual obejct의 eat()이 불리게 됨. 
+    // i=0: Animal eat
+    // i=1: Wolf eat --> dynamic binding 
+    // i=2: Fish eat --> dynamic binding 
+    // i=3: Animal eat 
+
+    return 0;
+} 
+```
+
+이러한 코드에 
+
+```c++
+cin >> i;
+anAnimal[i]->eat();
+```
+이렇게 i의 값을 런타임에서 결정되도록 하면,  
+어떻게 될까?  
+
+이 상태로는 알 수가 없다.  
+컴파일 타임에서는 알 수가 없고, execution에서만 알 수 있다.  
+따라서 i의 implementation은 runtime에서만 결정된다.  
+그래서 이를 'dynamic binding' 이라고 말한다!  
+
+## abstract class  
+- 최소 하나의 **pure virtual function** 을 지니는 클래스를 추상 클래스라고 부른다!  
+- implementation이 따로 없는, 오직 **interface**로서 제공한다.  
+- pure virtual function은 **=0** 으로 선언된다! 그리고 항상 derived class에서 정의된다..!! 즉, 그 자체만으로는 사용되지 않고 inherited 되어서 사용되기 위해 존재한다~~  
+
+- 예:  
+
+```c++ 
+class A {
+    public: virtual void f() = 0; // = pure virtual function 
+}
+```
+
+- 이러한 abstract class 는 그 자체로 사용이 안되기 때문에  
+
+```c++
+
+A x; 
+
+```
+
+이렇게는 쓰일 수 없다!  
+
+```c++
+
+A* x; //가능  
+
+```
+
+![image](https://user-images.githubusercontent.com/37579661/98824110-3e022180-2476-11eb-8bed-aa0784985748.png)
+
+
+## polymorphism 의 네가지 요소!  
+
+1. overloading  
+이름은 같고, parameter타입은 다른 것!  
+
+2. overriding  
+이름도 같고, parameter도 같은 것  
+
+```c++
+#include <iostream.h> using namespace std;
+void Func( int one, int two=2, int three=3);
+// 이런식으로 디폴트 값까지 설정할 수 있다!  
+// one, two 만 주어지면 three 의 값은 3 으로 자동으로 넣어진다. 
+
+void Func( float fv );
+main () {
+    Func(10, 20, 30);
+    Func(10, 20); // Let the last parm default Func(10); // Just provide the required parm. Func(1.5f);
+}
+void Func( int one, int two, int three)
+{
+    cout << "One = " << one << endl;
+    cout << "Two = " << two << endl;
+    cout << "Three = " << three << endl << endl;
+}
+void Func ( float fv)
+{
+    cout << fv << endl;
+}
+
+```
+
+## Generics  
+- 몇개의 key type이 정해져있지 않게 두는 것이다.  
+- Template 과 같은 개념이다!  
+
+## Template  
+
+1. function template  
+```c++
+template<typename T>
+T max(const T& a, const T& b)
+{
+    return (a > b) ? a : b;
+
+}
+
+
+cout << max(4, 5.5) //불가
+cout << max<double> (4.5, 5) //타입을 명시해주었으니 가능하다.
+
+```
+
+2. 한개 이상의 argument 를 가진 템플릿  
+
+```c++
+template<typename T1, typename T2>
+void print_max(const T1& a, const T2& b)
+{
+    cout<< ((a > b) ? a : b) << endl;
+}
+void f()
+{
+    print_max(4, 5.5);// Prints 5.5
+    print_max(5.5, 4);// Prints 5.5
+} 
+
+```
+
+3. class templates  
+```c++
+template<typename T> //T를 사용하기 위해 이렇게 써준다. 
+class thing {
+    public:
+        thing(T data);
+        ~thing() { delete x; }
+        T get_data() { return *x; }
+        T set_data(T data);
+    private:
+        T* x;
+};
+
+template<typename T>
+thing<T>:: thing(T data)
+{
+    x = new T; *x = data;
+}
+template<typename T>
+T thing<T>::set_data(T data)
+{
+    *x = data;
+} 
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+main()
+{
+    thing<int> i_thing(5); // int type 
+    thing<string> s_thing(“COMP151”); //string type
+
+    cout<< i_thing.get_data()<< endl;
+    cout<< s_thing.get_data()<< endl;
+    i_thing.set_data(10);
+    s_thing.set_data(''CPEG'');
+    cout<< i_thing.get_data()<< endl;
+    cout<< s_thing.get_data()<< endl;
+} 
+
+
+```
+
+
+- 템플릿은 class 에도 잘 쓰인다.  
+- 특히나 container classes 를 정의하는데 굉장히 유용하다.  
+ex. stack, queue, list...  
+
+
+## class template 예시 : List_Node!  
+
+1. 한 노드에 해당하는 코드!  
+한 노드는 보통 세가지 정보가 필요하다.  
+1. data itself  
+2. pointer to next node  
+3. pointer to previous node  
+
+
+```c++
+template<typename T> //T 사용하기 위해 써주기 
+class List_Node{
+public:
+    List_Node(const T& data);
+    List_Node<T>* next();
+     
+// Other member functions
+private:
+    List_Node<T>* next_m;
+    List_Node<T>* prev_m;
+    T data_m;
+
+    friend class List<T>; 
+    //List is a friend of List Node! 
+    //즉, List 는 List_Node의 private member를 접근할 수 있다는 명시이다. 
+};
+
+template<typename T>
+List_Node<T>::List_Node(const T& data)
+: data_m(data), next_m(0), prev_m(0) { } 
+//데이터는 data 로 initialize 해주고, 그 이후 포인터와 그 전 포인터는 null 로 만들어준다. 
+
+
+template<typename T>
+List_Node<T>* List_Node<T>::next()
+{ return next_m; } 
+
+```
+
+2. 전체 리스트에 해당하는 코드!  
+- head와, tail 이 필요하다.  
+- information of head, tail 이 필요한 것이다~  
+
+```c++
+template<typename T>
+class List {
+public:
+    List();
+    void append(const T& item);
+// Other member functions
+private:
+    List_Node<T>* head_m;
+    List_Node<T>* tail_m;
+};
+template<typename T>
+List<T>::List():head_m(0),tail_m(0)
+{}
+
+template<typename T>
+void List<T>::append(const T& item)
+{
+List_Node<T>* new_node
+= new List_Node<T>(item);
+if (! tail_m) {
+head_m= tail_m= new_node;
+} else {
+// ...
+}
+}
+
+```
