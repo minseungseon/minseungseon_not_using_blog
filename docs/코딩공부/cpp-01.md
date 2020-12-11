@@ -783,3 +783,203 @@ head_m= tail_m= new_node;
 }
 
 ```
+
+## STL  
+: Standard Template Library  
+
+3개 카테고리가 있다.  
+1. container class  
+: a holder object that stores a collection of other objects with any (user defined or built-in) data types.  
+
+2. iterator  
+container 의 요소를 하나하나 접근 할 때 쓰인다.  
+pointer! 개념이 들어간다.  
+
+
+3. algorithm  
+
+
+## 01 container classes  
+1. sequences  
+- vector, list, deque(double ended queue) 가 sequences 이다.  
+2. associative container:  
+- set  
+- map : balanced BST 에 저장된다.  
+- hash_map : hash 에 저장된다. 
+    -> 트리, 그냥 map 는 서치에 시간이 조금 걸린다. 하지만 hash는 데이터에 직접적으로 접근이 가능해서 더 빠르다.  
+    -> 순서가 없다. map은 순서가 있다.  
+
+3. container adapters  
+- implemented on top of another container  
+- stack, queue, priority queue 
+
+### sequence containers  
+Element access for all:  
+`front()`  
+`back()` 
+  
+Element access for vector and deque:  
+`[ ]`: Subscript operator, index not checked  
+
+
+Add/remove elements for all  
+`push_back()`: Append element.  
+`pop_back()`: Remove last element  
+
+Add/remove elements for list and deque:  
+`push_front()`: Insert element at the front.  
+`pop_front()`: Remove first element.  
+
+Miscellaneous operations for all:  
+`size()`: Returns the number of elements.  
+`empty()`: Returns true if the sequence is empty.  
+`resize(int i)`: Change size of the sequence.   
+
+- 선언 
+`vector<data type> variable_name;`  
+Ex) `vector<int> vec_int;`  
+
+- 활용
+
+```c++
+// four ints (size=4) with value 100
+// second 는 100, 100, 100, 100 을 가지게 된다. 
+vector<int> second (4,100); 
+
+//second 의 처음~끝을 copy 한다.
+vector<int> third (second.begin(),second.end());
+
+
+//third를 그대로 카피한다. 
+vector<int> fourth (third);
+
+//myint 리스트 배열을 fith에 카피한다. 
+int myints[] = {16,2,77,29};
+vector<int> fifth (myints, myints + sizeof(myints) / sizeof(int) ); //sizeof(myints) / sizeof(int) = 4
+
+```
+
+## 02 iterators  
+- 각각의 요소를 "traverse", 즉 하나하나를 방문하게 해준다.  
+- 포인터처럼 쓰인다.  
+
+```c++
+// vector::begin
+#include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+    vector<int> myvector;
+    for (int i=1; i<=5; i++) myvector.push_back(i);
+    vector<int>::iterator it;
+
+    cout << "myvector contains:";
+    for ( it=myvector.begin() ; it < myvector.end(); it++ )
+    cout << " " << *it; //순차적으로 vector 에 있는 원소들을 프린트한다. 
+    cout << endl;
+    return 0;
+}
+```
+
+- `begin()` , `end()`  
+`begin()` 은 맨 앞 요소를 가르키지만, `end()` 는 맨 마지막 요소 다음 null 을 가르킨다.  
+
+
+## vector example  
+```c++
+// erasing from vector
+#include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+    unsigned int i;
+    vector<unsigned int> myvector;
+    // set some values (from 1 to 10)
+    for (i=1; i<=10; i++) myvector.push_back(i);
+
+    // erase the 6th element
+    // begin을 기준으로 5를 더한 차례의 요소를 지운다. = 6번째 요소
+    myvector.erase (myvector.begin()+5);
+
+    // erase the first 3 elements:
+    myvector.erase (myvector.begin(),myvector.begin()+3);
+    cout << "myvector contains:";
+    for (i=0; i<myvector.size(); i++)
+    cout << " " << myvector[i];
+    cout << endl;
+    return 0;
+}
+```
+
+## stack example  
+stack 도 쓸 수 있다~  
+```c++
+// stack::push/pop
+#include <iostream>
+#include <stack>
+using namespace std;
+int main ()
+{
+    stack<int> mystack;
+
+    //0~5 를 push 한다!
+    for (int i=0; i<5; ++i) mystack.push(i);
+
+    cout << "Popping out elements...";
+    while (!mystack.empty())
+    {
+    // top 출력하고
+    cout << " " << mystack.top();
+    // 팝 하고 
+    mystack.pop();
+    }
+    cout << endl;
+    return 0;
+}
+```
+
+## vector 파라미터로 넘기기  
+그냥 vector 자체를 넘기게 되면 그 속의 '모든 값' 이 call by value 가 되어서 효율이 나빠질 수 있다.  
+이럴 때에는 `&` 를 활용하여 call by reference 로, 값 자체를 넘기는 것이 아니라 그 값에 접근할 수 있는 'reference'를 넘기는 것이 바람직 하다!  
+
+```c++
+// vector/vector-average.cpp - Averages numbers in vector
+// Fred Swartz - 2003-11-20
+
+#include <vector>
+#include <iostream>
+using namespace std;
+
+float sum(const vector<float>& x); // prototype
+
+//====================================================== main
+int main() {
+    vector<float> a;   // Declare a vector.
+
+    float temp;
+    while (cin >> temp) {
+        a.push_back(temp);
+    }
+    
+    cout << "Average = " << sum(a)/a.size() << endl;
+    
+    return 0;
+}
+
+
+//======================================================= sum
+// sum adds the values of the vector it is passed.
+
+//파라미터로 넘기면서 & 를 사용한다!
+float sum(const vector<float>& x) {
+    float total = 0.0;  // the sum is accumulated here
+    for (int i=0; i<x.size(); i++) {
+        total = total + x[i];  
+    }
+    return total;
+}
+
+
+```
