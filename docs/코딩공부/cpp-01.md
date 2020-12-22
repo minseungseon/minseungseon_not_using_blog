@@ -158,7 +158,7 @@ class Person{
 ```
 
 
-![image](https://user-images.githubusercontent.com/37579661/97948485-10610c80-1dd4-11eb-92be-caadcc1d87dd.png)
+![image](https://user-images.githubusercontent.com/37579661/ 97948485-10610c80-1dd4-11eb-92be-caadcc1d87dd.png)
 
 shallow copy는 카피의 의미 + sharing 이다. 왜냐하면 카피한 원본이 값이 바뀌면 copy한 값도 바뀌기 때문!  
 deep copy는 원본이 바뀌더라도 사본에 영향을 주지 않는다.  
@@ -782,8 +782,59 @@ head_m= tail_m= new_node;
 }
 }
 
+
+
 ```
 
+```c++
+template<typename T>
+Stack<T>::Stack(int n)
+{
+    stackPtr = new T[n];
+    size = n;
+    top =0;
+
+}
+
+template<typename T>
+Stack<T>::~Stack()
+{
+    if(stackPtr) delete[] StackPtr;
+
+}
+
+template<typename T>
+bool Stack<T>::push(const T& x)
+{
+    if(isFull()) return false;
+    stackPtr[top++] = x;
+    return true
+}
+
+template<typename T>
+bool Stack<T>::pop(T& x)
+{
+    if(isEmpty()) return false;
+    x = stackPtr[--top];
+    return true;
+}
+
+template<typename T>
+bool Stack<T>::isEmpty()
+{
+    if(top == 0) return true;
+    return false;
+}
+
+template<typename T>
+bool Stack<T>::isFull()
+{
+    if(top == size) return true;
+    return false;
+}
+
+
+```
 ## STL  
 : Standard Template Library  
 
