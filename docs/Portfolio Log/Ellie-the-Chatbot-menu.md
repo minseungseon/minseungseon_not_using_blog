@@ -33,8 +33,8 @@ contact email: seonminseung@naver.com
 <br>
 
 ## Login View - 로그인 화면
-
-<img src="https://user-images.githubusercontent.com/37579661/116289436-73ed5500-a7cd-11eb-8017-04277a51cccb.png" width = 100%>
+  
+<img src="https://user-images.githubusercontent.com/37579661/116289436-73ed5500-a7cd-11eb-8017-04277a51cccb.png">  
 
 Ellie The Chatbot 로그인 화면입니다. 
 
@@ -45,8 +45,8 @@ Ellie The Chatbot 로그인 화면입니다.
 <br>
 
 ## 회원가입 화면
-
-<img src="https://user-images.githubusercontent.com/37579661/116289693-ac8d2e80-a7cd-11eb-883e-a21d97cb5eb6.png" width = 100%>
+  
+<img src="https://user-images.githubusercontent.com/37579661/116289693-ac8d2e80-a7cd-11eb-883e-a21d97cb5eb6.png">  
 
 회원가입 화면에서는 자신의 정보를 입력하고, 만약 선생님의 지도 하에 Ellie The Chatbot을 사용하는 경우에는 학교코드를 입력할 수 있습니다. 선생님의 지도하에 앱을 다운로드 받은 경우가 아니라면, 외부인 코드를 입력하여 회원가입을 진행합니다.
 
@@ -55,7 +55,9 @@ Ellie The Chatbot 로그인 화면입니다.
 <br>
 
 ## Main View - 홈 화면
-<img src="https://user-images.githubusercontent.com/37579661/116289829-cdee1a80-a7cd-11eb-9d14-2679b18f2e24.png" width = 40%>
+   
+<img src="https://user-images.githubusercontent.com/37579661/116289829-cdee1a80-a7cd-11eb-9d14-2679b18f2e24.png">  
+
 
 메인 홈 화면 입니다. 
 
@@ -70,25 +72,26 @@ Ellie The Chatbot 로그인 화면입니다.
 <br>
 
 ## 1) Free Talking
+  
+<img src="https://user-images.githubusercontent.com/37579661/116290055-068df400-a7ce-11eb-9e8f-2f599e29ea27.png">  
 
-<img src="https://user-images.githubusercontent.com/37579661/116290055-068df400-a7ce-11eb-9e8f-2f599e29ea27.png" width = 40%>
 
 유저는 Free Talking에서 엘리와 자유 대화를 이어나갑니다. 
 
 <br>
 
 ## 2) Mission Challenge
-
-<img src="https://user-images.githubusercontent.com/37579661/116290163-23c2c280-a7ce-11eb-8718-b9d4e328c946.png" width = 100%>
-
+  
+<img src="https://user-images.githubusercontent.com/37579661/116290163-23c2c280-a7ce-11eb-8718-b9d4e328c946.png">  
 
 유저는 원하는 미션을 탭하여 들어가 Ellie와 대화를 하며 미션을 수행합니다.
 
 <br>
 
 ## 3) Speaking Games
+  
+<img src="https://user-images.githubusercontent.com/37579661/116290232-3c32dd00-a7ce-11eb-8c9a-dfecd6794e13.png">  
 
-<img src="https://user-images.githubusercontent.com/37579661/116290232-3c32dd00-a7ce-11eb-8c9a-dfecd6794e13.png" width = 100%>
 
 Speaking Games 에서 유저는 다양한 영어회화 관련 게임을 Ellie와의 대화를 통해 이어나갑니다.
 
