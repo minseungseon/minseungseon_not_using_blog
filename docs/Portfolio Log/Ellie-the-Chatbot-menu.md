@@ -15,6 +15,11 @@ has_children: true
 
 ## :sparkles: About Ellie the Chatbot  
 중앙대학교 영어교육학과 김혜영 교수님 지도 하에 만들어진 앱입니다.   
+  
+
+## :open_hands: How to use?  
+본 앱은 학교코드를 부여받은 유저가 사용할 수 있습니다.  
+학교코드를 부여받기 위해서 먼저 seonminseung@naver.com 으로 연락주시기 바랍니다:)  
 
 ## :pray: Contact  
 만약 앱에 관련하여 연락하고 싶으시다면 개발자인 저에게 연락주시면 됩니다!  
