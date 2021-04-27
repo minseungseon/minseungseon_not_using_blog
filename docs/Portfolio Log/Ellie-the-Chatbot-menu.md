@@ -13,6 +13,16 @@ has_children: true
  
 <br/>
 
+## :sparkles: About Ellie the Chatbot  
+중앙대학교 영어교육학과 김혜영 교수님 지도 하에 만들어진 앱입니다.   
+
+## :pray: Contact  
+만약 앱에 관련하여 연락하고 싶으시다면 개발자인 저에게 연락주시면 됩니다!  
+contact email: seonminseung@naver.com  
+감사합니다 :)
+
+<br> 
+
 ## Framework  
 
 | **server** | **front end** |  
